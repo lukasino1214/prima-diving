@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/diving.png");
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    height: 100vh;
+    color: #FFF;
+
+    img {
+        width: 25vh;
+        height: 15vh;
+    }
+
+    h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 10vh;
+        //text-decoration: underline;
+    }
+
+    #languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20vh;
+
+        a {
+            text-align: center;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        a:visited { text-decoration: none; color: #FFF; }
+        a:hover { text-decoration: none; color: #FFF; }
+        a:focus { text-decoration: none; color: #FFF; }
+        a:hover, a:active { text-decoration: none; color: #FFF }
+    }
+}

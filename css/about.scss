@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$viewport: 100vh;
+
+html {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url("../img/diving.png");
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fffefe;
+            font-size: 18px;
+            color: #111;
+
+            li {
+                float: left;
+                padding: $viewport/75 $viewport/75;
+                color: #111;
+
+                #language {
+                    display: flex;
+                    flex-direction: row;
+                    /*justify-content: center;
+                    align-items: center;*/
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 7.5px;
+
+                        img {
+                            width: 5vh;
+                            height: 2.5vh;
+                        }
+
+                        p {
+                            margin: 0;
+                            margin-left: 7.5px;
+                        }
+                    }
+                }
+            }
+        
+            li a {
+                position: relative;
+                display: block;
+                //color: white;
+                text-align: center;
+                text-decoration: none;
+                color: #111;
+                }
+            
+            li a:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+                background-color: #FFF;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+                //color: #111;
+            }    
+
+            li a:hover:before {
+                visibility: visible;
+                width: 100%;
+                //color: #111;
+            }
+
+            li a:hover:not(.active) {
+                //background-color: #111;
+                //color: #111;
+            }
+                          
+            .active {
+                //color: #4CAF50;
+            }
+        }
+    }
+}
